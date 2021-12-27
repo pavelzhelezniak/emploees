@@ -4,7 +4,7 @@ const EmployeesListItem = ({ employeesName, wage }) => {
 	return (
 		<li className="list-group-item d-flex justify-content-between">
 			<span className="list-group-item-label">{employeesName}</span>
-			<input type="text" className="list-group-item-input" defaultValue={wage} />
+			<input type="text" className="list-group-item-input" defaultValue={wage + '$'} />
 			<div className='d-flex justify-content-center align-items-center'>
 				<button type="button"
 					className="btn-cookie btn-sm ">
