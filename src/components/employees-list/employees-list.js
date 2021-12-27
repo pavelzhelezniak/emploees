@@ -6,8 +6,8 @@ const EmployeesList = () => {
 	return (
 		<ul className="app-list list-group">
 			<EmployeesListItem employeesName={'Alex Spiridovich'} wage={"700$"} />
-			<EmployeesListItem />
-			<EmployeesListItem />
+			<EmployeesListItem employeesName={'Pavel Zhaliazniak'} wage={"1100$"} />
+			<EmployeesListItem employeesName={'Dmitry Pudau'} wage={"900$"} />
 		</ul>
 	)
 }

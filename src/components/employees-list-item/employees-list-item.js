@@ -1,6 +1,6 @@
 import './employees-list-item.css';
 
-const EmployeesListItem = ({ employeesName, wage, }) => {
+const EmployeesListItem = ({ employeesName, wage }) => {
 	return (
 		<li className="list-group-item d-flex justify-content-between">
 			<span className="list-group-item-label">{employeesName}</span>
