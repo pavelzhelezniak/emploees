@@ -20,6 +20,21 @@ class App extends Component {
 		}
 	}
 
+	deleteItem = (id) => {
+		this.setState(({ data }) => {
+			// const index = data.findIndex(elem => elem.id === id);
+
+			// const before = data.slice(0, index);
+			// const after = data.slice(index + 1);
+
+			// const newArr = [...before, ...after]
+
+			return {
+				data: data.filter(item => item.id !== id) // data: newArr
+			}
+		})
+	}
+
 	render() {
 		return (
 			<div className="app" >
@@ -31,7 +46,7 @@ class App extends Component {
 				</div>
 				<EmployeesList
 					data={this.state.data}
-					onDelete={id => console.log(id)} />
+					onDelete={this.deleteItem} />
 				<EmployeesAddForm />
 			</div >
 		);
